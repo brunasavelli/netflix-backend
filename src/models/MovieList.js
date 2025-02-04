@@ -31,5 +31,9 @@ class MovieList {
         this.movies = this.movies.filter(movie => movie.id != id);
     }
 
-    
+    getTotalMovies() {
+        return this.movies.length;
+    }
 }
+
+module.exports = MovieList;
