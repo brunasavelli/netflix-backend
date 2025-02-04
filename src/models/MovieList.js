@@ -26,4 +26,10 @@ class MovieList {
         Object.assign(movie, updateData);
         return movie;
     }
+
+    deleteMovie(id) {
+        this.movies = this.movies.filter(movie => movie.id != id);
+    }
+
+    
 }
