@@ -20,6 +20,7 @@ class MovieList {
         return movie;
     }
 
+    //Método de update
     updateMovie(id, updateData) {
         const movie = getMovieById(id);
         Object.assign(movie, updateData);
