@@ -11,4 +11,12 @@ class MovieList {
     getAllMovies() {
         return this.movies;
     }
+
+    getMovieById(id) {
+        const movie = this.movies.find(movie => movie.id == id);
+        if(!movie) {
+            throw new Error("Filme não encontrado");
+        }
+        return movie;
+    }
 }
