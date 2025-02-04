@@ -1,0 +1,23 @@
+{
+  "name": "backend-netflix-api",
+  "version": "1.0.0",
+  "description": "Projeto Back-End sobre filmes com testes no Postman",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SENAI",
+    "Node.js",
+    "Back-End",
+    "Bruna"
+  ],
+  "author": "Bruna Savelli",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "nodemon": "^3.1.9",
+    "uuid": "^11.0.5"
+  }
+}
