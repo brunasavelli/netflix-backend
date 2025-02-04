@@ -19,4 +19,10 @@ class MovieList {
         }
         return movie;
     }
+
+    updateMovie(id, updateData) {
+        const movie = getMovieById(id);
+        Object.assign(movie, updateData);
+        return movie;
+    }
 }
