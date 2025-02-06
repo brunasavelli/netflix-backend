@@ -22,7 +22,7 @@ class MovieList {
 
     //Método de update
     updateMovie(id, updateData) {
-        const movie = getMovieById(id);
+        const movie = this.getMovieById(id);
         Object.assign(movie, updateData);
         return movie;
     }

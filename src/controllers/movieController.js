@@ -17,6 +17,7 @@ const router = {
             }
             const movie = new Movie(title, director, year, genre);
             lista.addMovie(movie);
+            res.status(200).json({message: 'Filme adicionado com sucesso!'})
         } catch (error) {
             res.status(400).json({message: 'Erro ao adicionar filme', error});
         }
@@ -42,9 +43,9 @@ const router = {
 
     updateMovie: (req, res) => {
         try {
-            res.status(200).json(lista.updateMovie(req.param.id, req.body));
+            res.status(200).json(lista.updateMovie(req.params.id, req.body));
         } catch (error) {
-            res.status(404).json('Erro ao atualizar filme', error);
+            res.status(404).json({message: 'Erro ao atualizar filme', error});
         }
     },
 
