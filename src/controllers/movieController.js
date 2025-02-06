@@ -20,5 +20,14 @@ const router = {
         } catch (error) {
             res.status(400).json({message: 'Erro ao adicionar filme', error});
         }
+    },
+
+    getAllMovies: (req, res) => {
+        try {
+            const movies = lista.getAllMovies();
+            res.status(200).json(movies);
+        } catch (error) {
+            res.status(404).json({message: 'Erro ao buscar filmes', error});
+        }
     }
 }
