@@ -56,4 +56,6 @@ const router = {
             res.status(404).json('Erro ao deletar filme', error);
         }
     }
-}
+};
+
+module.exports = router;
