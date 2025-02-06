@@ -29,5 +29,14 @@ const router = {
         } catch (error) {
             res.status(404).json({message: 'Erro ao buscar filmes', error});
         }
+    },
+
+    getMovieById: (req, res) => {
+        try {
+            const id = req.params.id;
+            res.status(200).json(lista.getMovieById(id));
+        } catch (error) {
+            res.status(404).json({message: 'Erro ao buscar filme por id', error});
+        }
     }
 }
