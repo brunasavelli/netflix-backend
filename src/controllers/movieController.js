@@ -38,5 +38,13 @@ const router = {
         } catch (error) {
             res.status(404).json({message: 'Erro ao buscar filme por id', error});
         }
+    },
+
+    updateMovie: (req, res) => {
+        try {
+            res.status(200).json(lista.updateMovie(req.param.id, req.body));
+        } catch (error) {
+            res.status(404).json('Erro ao atualizar filme', error);
+        }
     }
 }
