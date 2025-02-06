@@ -46,5 +46,14 @@ const router = {
         } catch (error) {
             res.status(404).json('Erro ao atualizar filme', error);
         }
+    },
+
+    deleteMovie: (req, res) => {
+        try {
+            lista.deleteMovie(req.params.id);
+            res.status(200).json({message: 'Filme deletado com sucesso'});
+        } catch (error) {
+            res.status(404).json('Erro ao deletar filme', error);
+        }
     }
 }
