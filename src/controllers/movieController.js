@@ -5,3 +5,20 @@ const lista = new MovieList();
 
 const filme1 = new Movie('Diário de uma Paixão', 'Nick Cassavetes', '2004', 'Romance', 10, false);
 lista.addMovie(filme1);
+
+lista.addMovie(new Movie('10 Coisas que Odeio em Você', 'Gil Junger', '1999', 'Romance', 10, false));
+
+const router = {
+    addMovie: (req,res) => {
+        try {
+            const{title, director, year, genre} = req.body;
+            if(!title || !director || !year || !genre) {
+                throw newError('Preencha todos os campos!')
+            }
+            const movie = new Movie(title, director, year, genre);
+            lista.addMovie(movie);
+        } catch (error) {
+            res.status(400).json({message: 'Erro ao adicionar filme', error});
+        }
+    }
+}
