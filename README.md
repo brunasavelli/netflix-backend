@@ -8,15 +8,7 @@ Atividade Back-End para CRUD de filmes
 
 ## 2. Arquitetura MVC
 
-src/
-├── controllers/
-│   ├── movieController.js
-├── models/
-│   ├── Movie.js
-│   ├── MovieList.js
-├── routes/
-│   ├── MovieRoutes.js
-├── server.js
+![image](https://github.com/user-attachments/assets/f540eb7c-540c-4c2b-85cf-67fb810cbfc9)
 
 ## 3. Testes no Postman
 
