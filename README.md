@@ -32,3 +32,6 @@ Ao buscar novamente por todos os filmes, vemos que o novo filme foi adicionado
 
 Ao buscar novamente por todos os filmes, vemos que o filme foi deletado (Diário de uma Paixão)
 ![image](https://github.com/user-attachments/assets/75ecf87c-4510-4b05-92f3-61fb121cb752)
+
+## 4. XML
+![image](https://github.com/user-attachments/assets/da51976e-d065-46a7-90c3-269fbc6c30aa)
